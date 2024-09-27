@@ -1,0 +1,8 @@
+version: 1
+services:
+  - type: web
+    name: SPOT-LIGHT
+    env: static
+    staticPublishPath: ./build
+    autoDeploy: true
+    buildCommand: npm install && npm run build
