@@ -42,20 +42,27 @@ const ProductDetails = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Image du produit */}
         <div className="space-y-4">
-          {product.images.map((image, index) => (
+          {product.images.length > 0 && (
             <img
-              key={`image-${index}`}
-              src={image}
-              alt={`${product.title} ${index + 1}`}
+              src={product.images[0]}
+              alt={`${product.title} primary`}
               className="rounded-md w-full object-cover"
             />
-          ))}
+          )}
+          {product.images.length > 1 && (
+            <img
+              src={product.images[1]}
+              alt={`${product.title} secondary`}
+              className="rounded-md w-full object-cover"
+            />
+          )}
         </div>
 
         {/* Détails du produit */}
         <div className="space-y-6">
           <h1 className="text-3xl font-bold">{product.title}</h1>
           <p className="text-xl font-semibold text-gray-700">{product.regularPrice}</p>
+
           {/* Description si elle existe */}
           {product.description && <p className="text-gray-600">{product.description}</p>}
 
@@ -89,7 +96,6 @@ const ProductDetails = () => {
           </div>
         </div>
       </div>
-
     </div>
   );
 };

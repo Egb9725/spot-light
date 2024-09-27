@@ -55,11 +55,6 @@ const Products = () => {
           ))}
         </div>
 
-        <div className="flex justify-center mt-10">
-          <button className="bg-primary text-white py-2 px-6 rounded-md">
-            View All
-          </button>
-        </div>
       </div>
     </div>
   );

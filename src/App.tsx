@@ -24,7 +24,6 @@ function App() {
         {/* Route pour afficher les détails d'un produit spécifique */}
         <Route path="/products/:id" element={<ProductDetails />} />
 
-        {/* Vous pouvez définir d'autres routes ici si nécessaire */}
         <Route path="/products" element={<Products />} />
       </Routes>
 
