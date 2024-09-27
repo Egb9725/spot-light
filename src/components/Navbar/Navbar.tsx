@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Logo from "../../assets/Logo-2Vxz3k_0.png";
+import Logo from "../../assets/logo.png";
 import { IoMdSearch } from "react-icons/io";
 import { RiShoppingBag4Line } from "react-icons/ri";
 import { AiOutlineClose } from "react-icons/ai"; // Import the close icon
