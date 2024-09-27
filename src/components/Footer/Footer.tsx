@@ -1,5 +1,5 @@
 import React from "react";
-import footerLogo from "../../assets/footer.png"; // Assurez-vous d'utiliser votre image pour le logo
+import footerLogo from "../../assets/footer-DUz0vm-o.png"; // Assurez-vous d'utiliser votre image pour le logo
 import { FaFacebook, FaInstagram, FaYoutube, FaTiktok } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 
